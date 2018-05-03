@@ -1,6 +1,14 @@
 import Foundation
 import ObjectMapper
 
+enum Result<T> {
+  case success(T)
+  case failure(Error)
+}
+
+//
+// The entity or business object
+//
 struct Mobile: Mappable {
     
     var name: String?

@@ -1,6 +1,9 @@
 import Foundation
 import ObjectMapper
 
+//
+// The entity or business object
+//
 struct MobileImage: Mappable {
     
     var mobileID: Int?

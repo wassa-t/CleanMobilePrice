@@ -16,8 +16,16 @@
 		A8439862209AA00E0022288F /* CleanMobilePriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8439861209AA00E0022288F /* CleanMobilePriceTests.swift */; };
 		A843987D209AA10D0022288F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843987B209AA10C0022288F /* APIManager.swift */; };
 		A843987E209AA10D0022288F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843987C209AA10C0022288F /* DataManager.swift */; };
+		A85B544B209AEE7F0005197A /* MobileListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5442209AEE7F0005197A /* MobileListConfigurator.swift */; };
+		A85B544C209AEE7F0005197A /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5443209AEE7F0005197A /* Mobile.swift */; };
+		A85B544D209AEE7F0005197A /* MobileListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5444209AEE7F0005197A /* MobileListInteractor.swift */; };
+		A85B544E209AEE7F0005197A /* MobileListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5445209AEE7F0005197A /* MobileListModels.swift */; };
+		A85B544F209AEE7F0005197A /* MobileListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5446209AEE7F0005197A /* MobileListPresenter.swift */; };
+		A85B5450209AEE7F0005197A /* MobileListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5447209AEE7F0005197A /* MobileListRouter.swift */; };
+		A85B5451209AEE7F0005197A /* MobileListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5448209AEE7F0005197A /* MobileListStore.swift */; };
+		A85B5452209AEE7F0005197A /* MobileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5449209AEE7F0005197A /* MobileListViewController.swift */; };
+		A85B5453209AEE7F0005197A /* MobileListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B544A209AEE7F0005197A /* MobileListWorker.swift */; };
 		A8E2E5E6209AC6F8008B9595 /* MobileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2E5E4209AC6F8008B9595 /* MobileImage.swift */; };
-		A8E2E5E7209AC6F8008B9595 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2E5E5209AC6F8008B9595 /* Mobile.swift */; };
 		DFCF41C32D00C75E1276460E /* Pods_CleanMobilePrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481C277973C04FD9BB122126 /* Pods_CleanMobilePrice.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +56,16 @@
 		A8439863209AA00E0022288F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A843987B209AA10C0022288F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		A843987C209AA10C0022288F /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A85B5442209AEE7F0005197A /* MobileListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListConfigurator.swift; sourceTree = "<group>"; };
+		A85B5443209AEE7F0005197A /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		A85B5444209AEE7F0005197A /* MobileListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListInteractor.swift; sourceTree = "<group>"; };
+		A85B5445209AEE7F0005197A /* MobileListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListModels.swift; sourceTree = "<group>"; };
+		A85B5446209AEE7F0005197A /* MobileListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListPresenter.swift; sourceTree = "<group>"; };
+		A85B5447209AEE7F0005197A /* MobileListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListRouter.swift; sourceTree = "<group>"; };
+		A85B5448209AEE7F0005197A /* MobileListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListStore.swift; sourceTree = "<group>"; };
+		A85B5449209AEE7F0005197A /* MobileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewController.swift; sourceTree = "<group>"; };
+		A85B544A209AEE7F0005197A /* MobileListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListWorker.swift; sourceTree = "<group>"; };
 		A8E2E5E4209AC6F8008B9595 /* MobileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileImage.swift; sourceTree = "<group>"; };
-		A8E2E5E5209AC6F8008B9595 /* Mobile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		AA7625B8255984AF560A0F9E /* Pods-CleanMobilePriceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMobilePriceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanMobilePriceTests/Pods-CleanMobilePriceTests.release.xcconfig"; sourceTree = "<group>"; };
 		F8B767778EF911AF39F11410 /* Pods-CleanMobilePrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMobilePrice.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanMobilePrice/Pods-CleanMobilePrice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +147,14 @@
 		A8439879209AA0C10022288F /* MobileList */ = {
 			isa = PBXGroup;
 			children = (
+				A85B5442209AEE7F0005197A /* MobileListConfigurator.swift */,
+				A85B5444209AEE7F0005197A /* MobileListInteractor.swift */,
+				A85B5445209AEE7F0005197A /* MobileListModels.swift */,
+				A85B5446209AEE7F0005197A /* MobileListPresenter.swift */,
+				A85B5447209AEE7F0005197A /* MobileListRouter.swift */,
+				A85B5448209AEE7F0005197A /* MobileListStore.swift */,
+				A85B5449209AEE7F0005197A /* MobileListViewController.swift */,
+				A85B544A209AEE7F0005197A /* MobileListWorker.swift */,
 			);
 			path = MobileList;
 			sourceTree = "<group>";
@@ -154,7 +178,7 @@
 		A8E2E5E3209AC6F0008B9595 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A8E2E5E5209AC6F8008B9595 /* Mobile.swift */,
+				A85B5443209AEE7F0005197A /* Mobile.swift */,
 				A8E2E5E4209AC6F8008B9595 /* MobileImage.swift */,
 			);
 			path = Models;
@@ -349,9 +373,17 @@
 			files = (
 				A843984F209AA00C0022288F /* ViewController.swift in Sources */,
 				A843987E209AA10D0022288F /* DataManager.swift in Sources */,
+				A85B5450209AEE7F0005197A /* MobileListRouter.swift in Sources */,
+				A85B544C209AEE7F0005197A /* Mobile.swift in Sources */,
+				A85B544F209AEE7F0005197A /* MobileListPresenter.swift in Sources */,
+				A85B5453209AEE7F0005197A /* MobileListWorker.swift in Sources */,
+				A85B544E209AEE7F0005197A /* MobileListModels.swift in Sources */,
+				A85B544B209AEE7F0005197A /* MobileListConfigurator.swift in Sources */,
 				A843987D209AA10D0022288F /* APIManager.swift in Sources */,
-				A8E2E5E7209AC6F8008B9595 /* Mobile.swift in Sources */,
 				A8E2E5E6209AC6F8008B9595 /* MobileImage.swift in Sources */,
+				A85B5451209AEE7F0005197A /* MobileListStore.swift in Sources */,
+				A85B544D209AEE7F0005197A /* MobileListInteractor.swift in Sources */,
+				A85B5452209AEE7F0005197A /* MobileListViewController.swift in Sources */,
 				A843984D209AA00C0022288F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
