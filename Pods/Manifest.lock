@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.6.0)
+  - ObjectMapper (3.1.0)
+  - SDWebImage (4.3.0):
+    - SDWebImage/Core (= 4.3.0)
+  - SDWebImage/Core (4.3.0)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ObjectMapper
+  - SDWebImage
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - ObjectMapper
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: d00791887e6188714015f02aafa21e366ea76700
+
+COCOAPODS: 1.5.0
