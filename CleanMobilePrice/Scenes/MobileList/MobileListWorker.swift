@@ -10,7 +10,6 @@ import UIKit
 
 protocol MobileListStoreProtocol {
   func getMobiles(_ completion: @escaping (Result<[Mobile]>) -> Void)
-  func addMobileToFavorite(mobileID: Int)
 }
 
 class MobileListWorker {
@@ -27,9 +26,5 @@ class MobileListWorker {
     store.getMobiles {
       completion($0)
     }
-  }
-  
-  func addMobileToFavorite(mobileID: Int) {
-    store.addMobileToFavorite(mobileID: mobileID)
   }
 }

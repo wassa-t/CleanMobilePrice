@@ -15,7 +15,6 @@ protocol MobileListPresenterInterface {
 
 class MobileListPresenter: MobileListPresenterInterface {
   weak var viewController: MobileListViewControllerInterface!
-  var dataManager: DataManagerProtocol! = DataManager.shared
   
   // MARK: - Presentation logic
   
@@ -29,7 +28,7 @@ class MobileListPresenter: MobileListPresenterInterface {
           price: mobile.priceString,
           rating: mobile.ratingString,
           thumbImageURL: mobile.thumbImageURL,
-          isFavorite: dataManager.favoriteIDs.contains(mobile.id!)
+          isFavorite: mobile.isFavorite
         )
         displayedMobiles.append(displayedMobile)
       }
