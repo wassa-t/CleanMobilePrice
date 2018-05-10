@@ -14,17 +14,26 @@ protocol MobileListPresenterInterface {
 
 class MobileListPresenter: MobileListPresenterInterface {
   weak var viewController: MobileListViewControllerInterface!
-
+  
   // MARK: - Presentation logic
-
+  
   func presentMobiles(response: MobileList.GetMobiles.Response) {
-    // NOTE: Format the response from the Interactor and pass the result back to the View Controller. The resulting view model should be using only primitive types. Eg: the view should not need to involve converting date object into a formatted string. The formatting is done here.
-    
     switch response.result {
     case .success(let mobiles):
-      let viewModel = MobileList.GetMobiles.ViewModel()
+      var displayedMobiles: [Mobile.Displayed] = []
+      for mobile in mobiles {
+        let displayedMobile = Mobile.Displayed(
+          name: mobile.name,
+          description: mobile.description,
+          price: mobile.priceString,
+          rating: mobile.ratingString,
+          thumbImageURL: mobile.thumbImageURL
+        )
+        displayedMobiles.append(displayedMobile)
+      }
+      let viewModel = MobileList.GetMobiles.ViewModel(displayedMobiles: displayedMobiles)
       viewController.displayMobiles(viewModel: viewModel)
-    case .failure(let error):
+    case .failure:
       viewController.displayError()
     }
   }

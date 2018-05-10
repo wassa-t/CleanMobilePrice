@@ -18,6 +18,18 @@ struct MobileList {
       var result: Result<[Mobile]>
     }
     /// Data struct sent to ViewController
-    struct ViewModel {}
+    struct ViewModel {
+      var displayedMobiles: [Mobile.Displayed]?
+    }
+  }
+  
+  struct SetSelectedMobile {
+    struct Request {
+      var selectedIndex: Int
+    }
+    struct Response {
+    }
+    struct ViewModel {
+    }
   }
 }

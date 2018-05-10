@@ -14,8 +14,7 @@ class MobileListStore: MobileListStoreProtocol {
   func getMobiles(_ completion: @escaping (Result<[Mobile]>) -> Void) {
     Alamofire.request("https://scb-test-mobile.herokuapp.com/api/mobiles/", encoding: JSONEncoding.default)
       .validate()
-      .responseJSON {
-        response in
+      .responseJSON { response in
         switch response.result {
         case .success(let value):
           let array = JSON(value)

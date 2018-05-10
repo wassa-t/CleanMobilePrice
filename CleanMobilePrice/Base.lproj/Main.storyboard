@@ -15,7 +15,7 @@
         <!--Mobile List View Controller-->
         <scene sceneID="PjR-xW-GnE">
             <objects>
-                <viewController id="8Zy-Ja-Dah" customClass="MobileListViewController" customModule="MobilePrice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8Zy-Ja-Dah" customClass="MobileListViewController" customModule="CleanMobilePrice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q66-QB-6Ar">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,9 +33,6 @@
                                         <state key="selected">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
-                                        <connections>
-                                            <action selector="listTypeTappedWithSender:" destination="8Zy-Ja-Dah" eventType="touchUpInside" id="8Jr-RT-4Gq"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3O-1j-2nb">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="43"/>
@@ -47,9 +44,6 @@
                                         <state key="selected">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
-                                        <connections>
-                                            <action selector="listTypeTappedWithSender:" destination="8Zy-Ja-Dah" eventType="touchUpInside" id="ozL-vn-CQ9"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,7 +63,7 @@
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhoneCell" rowHeight="100" id="3tz-bx-3Fy" customClass="MobileTableViewCell" customModule="MobilePrice" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhoneCell" rowHeight="100" id="3tz-bx-3Fy" customClass="MobileListTableViewCell" customModule="CleanMobilePrice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3tz-bx-3Fy" id="fvz-vf-ASd">
@@ -181,17 +175,11 @@ Label 2</string>
                     </view>
                     <navigationItem key="navigationItem" id="A18-aU-Ckz">
                         <barButtonItem key="backBarButtonItem" title=" " id="zRX-zc-hJx"/>
-                        <barButtonItem key="rightBarButtonItem" title="Sort" id="ibF-Lr-lC0">
-                            <connections>
-                                <action selector="sortTappedWithSender:" destination="8Zy-Ja-Dah" id="q9r-kH-6fQ"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Sort" id="ibF-Lr-lC0"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="allButton" destination="yPb-Jk-Yw8" id="QfS-qg-kZ8"/>
-                        <outlet property="favouriteButton" destination="K3O-1j-2nb" id="3Og-gp-WSv"/>
                         <outlet property="tableView" destination="c2n-DQ-Pf8" id="Zex-Xs-eZu"/>
-                        <segue destination="3aL-nD-pIp" kind="show" identifier="MobileDetails" id="kSD-sb-6Ev"/>
+                        <segue destination="3aL-nD-pIp" kind="show" identifier="ShowDetailsScene" id="kSD-sb-6Ev"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3h-JH-OZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -201,7 +189,7 @@ Label 2</string>
         <!--mobile name-->
         <scene sceneID="ZH7-gA-AOQ">
             <objects>
-                <viewController id="3aL-nD-pIp" customClass="MobileDetailsViewController" customModule="MobilePrice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3aL-nD-pIp" customClass="MobileDetailsViewController" customModule="CleanMobilePrice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Th-7n-Vdd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,7 +204,7 @@ Label 2</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="hE2-mV-ALN" customClass="MobileImageCollectionViewCell" customModule="MobilePrice" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="hE2-mV-ALN" customClass="MobileImageCollectionViewCell" customModule="CleanMobilePrice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="17" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
