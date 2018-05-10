@@ -52,11 +52,11 @@ struct Mobile: Mappable {
   }
   
   var priceString: String {
-    return "\(price ?? 0)"
+    return "Price: \(price ?? 0)"
   }
   
   var ratingString: String {
-    return "\(rating ?? 0)"
+    return "Rating: \(rating ?? 0)"
   }
   
   struct Displayed {
@@ -65,5 +65,6 @@ struct Mobile: Mappable {
     var price: String?
     var rating: String?
     var thumbImageURL: URL?
+    var isFavorite: Bool
   }
 }

@@ -8,24 +8,74 @@
 
 import UIKit
 
+enum SortingType {
+  case priceHighToLow
+  case priceLowToHigh
+  case rating
+}
+
+enum ListType {
+  case all
+  case favorite
+}
+
 struct MobileList {
-  /// This structure represents a use case
   struct GetMobiles {
-    /// Data struct sent to Interactor
-    struct Request {}
-    /// Data struct sent to Presenter
-    struct Response {
-      var result: Result<[Mobile]>
+    struct Request {
     }
-    /// Data struct sent to ViewController
+    struct Response {
+    }
+    struct ViewModel {
+    }
+  }
+  
+  struct PresentMobile {
+    struct Request {
+      var listType: ListType
+    }
+    struct Response {
+      var mobiles: [Mobile]?
+      var listType: ListType? = .all
+    }
     struct ViewModel {
       var displayedMobiles: [Mobile.Displayed]?
+      var listType: ListType
+    }
+  }
+  
+  struct AddRemoveFavorite {
+    struct Request {
+      var index: Int
+    }
+    struct Response {
+    }
+    struct ViewModel {
+    }
+  }
+  
+  struct ChangeList {
+    struct Request {
+      var listType: ListType
+    }
+    struct Response {
+    }
+    struct ViewModel {
     }
   }
   
   struct SetSelectedMobile {
     struct Request {
       var selectedIndex: Int
+    }
+    struct Response {
+    }
+    struct ViewModel {
+    }
+  }
+  
+  struct SortMobiles {
+    struct Request {
+      var sortingType: SortingType
     }
     struct Response {
     }

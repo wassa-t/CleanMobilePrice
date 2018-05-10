@@ -30,4 +30,8 @@ class MobileListStore: MobileListStoreProtocol {
         }
     }
   }
+  
+  func addMobileToFavorite(mobileID: Int) {
+    
+  }
 }

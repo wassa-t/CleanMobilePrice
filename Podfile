@@ -9,7 +9,6 @@ target 'CleanMobilePrice' do
   pod 'SwiftyJSON'
   pod 'ObjectMapper'
   pod 'SDWebImage'
-  pod 'Realm'
 
   target 'CleanMobilePriceTests' do
     inherit! :search_paths

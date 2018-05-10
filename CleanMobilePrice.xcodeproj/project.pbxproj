@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		24BD41D902FC0E0E7B309090 /* Pods_CleanMobilePriceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527B8F33B0816C5502D321BA /* Pods_CleanMobilePriceTests.framework */; };
 		2D14996820A3F66A00C15E23 /* MobileImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14996720A3F66A00C15E23 /* MobileImageCollectionViewCell.swift */; };
+		2D14996B20A456D100C15E23 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14996A20A456D100C15E23 /* DataManager.swift */; };
 		2D44B7A5209B13440043EF90 /* MobileListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A4209B13440043EF90 /* MobileListTableViewCell.swift */; };
 		2D44B7B0209C421F0043EF90 /* MobileDetailsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A7209C421F0043EF90 /* MobileDetailsStore.swift */; };
 		2D44B7B1209C421F0043EF90 /* MobileDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A8209C421F0043EF90 /* MobileDetailsPresenter.swift */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		2D14996720A3F66A00C15E23 /* MobileImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D14996A20A456D100C15E23 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		2D44B7A4209B13440043EF90 /* MobileListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListTableViewCell.swift; sourceTree = "<group>"; };
 		2D44B7A7209C421F0043EF90 /* MobileDetailsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsStore.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsStore.swift; sourceTree = SOURCE_ROOT; };
 		2D44B7A8209C421F0043EF90 /* MobileDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsPresenter.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsPresenter.swift; sourceTree = SOURCE_ROOT; };
@@ -106,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D14996920A4569900C15E23 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D14996A20A456D100C15E23 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		A8439840209AA00C0022288F = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 		A843984B209AA00C0022288F /* CleanMobilePrice */ = {
 			isa = PBXGroup;
 			children = (
+				2D14996920A4569900C15E23 /* Services */,
 				A8E2E5E3209AC6F0008B9595 /* Models */,
 				A843986C209AA08B0022288F /* Scenes */,
 				A843984C209AA00C0022288F /* AppDelegate.swift */,
@@ -331,7 +342,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CleanMobilePrice/Pods-CleanMobilePrice-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -339,7 +349,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -396,6 +405,7 @@
 				2D44B7B4209C421F0043EF90 /* MobileDetailsModels.swift in Sources */,
 				A85B5450209AEE7F0005197A /* MobileListRouter.swift in Sources */,
 				A85B544C209AEE7F0005197A /* Mobile.swift in Sources */,
+				2D14996B20A456D100C15E23 /* DataManager.swift in Sources */,
 				A85B544F209AEE7F0005197A /* MobileListPresenter.swift in Sources */,
 				A85B5453209AEE7F0005197A /* MobileListWorker.swift in Sources */,
 				A85B544E209AEE7F0005197A /* MobileListModels.swift in Sources */,

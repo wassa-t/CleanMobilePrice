@@ -9,32 +9,36 @@
 import UIKit
 
 protocol MobileListPresenterInterface {
-  func presentMobiles(response: MobileList.GetMobiles.Response)
+  func presentMobiles(response: MobileList.PresentMobile.Response)
+  func presentError()
 }
 
 class MobileListPresenter: MobileListPresenterInterface {
   weak var viewController: MobileListViewControllerInterface!
+  var dataManager: DataManagerProtocol! = DataManager.shared
   
   // MARK: - Presentation logic
   
-  func presentMobiles(response: MobileList.GetMobiles.Response) {
-    switch response.result {
-    case .success(let mobiles):
-      var displayedMobiles: [Mobile.Displayed] = []
+  func presentMobiles(response: MobileList.PresentMobile.Response) {
+    var displayedMobiles: [Mobile.Displayed] = []
+    if let mobiles = response.mobiles {
       for mobile in mobiles {
         let displayedMobile = Mobile.Displayed(
           name: mobile.name,
           description: mobile.description,
           price: mobile.priceString,
           rating: mobile.ratingString,
-          thumbImageURL: mobile.thumbImageURL
+          thumbImageURL: mobile.thumbImageURL,
+          isFavorite: dataManager.favoriteIDs.contains(mobile.id!)
         )
         displayedMobiles.append(displayedMobile)
       }
-      let viewModel = MobileList.GetMobiles.ViewModel(displayedMobiles: displayedMobiles)
-      viewController.displayMobiles(viewModel: viewModel)
-    case .failure:
-      viewController.displayError()
     }
+    let viewModel = MobileList.PresentMobile.ViewModel(displayedMobiles: displayedMobiles, listType: response.listType!)
+    viewController.displayMobiles(viewModel: viewModel)
+  }
+  
+  func presentError() {
+    
   }
 }
