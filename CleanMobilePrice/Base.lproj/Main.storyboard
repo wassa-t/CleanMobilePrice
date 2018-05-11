@@ -15,7 +15,7 @@
         <!--Mobile List View Controller-->
         <scene sceneID="PjR-xW-GnE">
             <objects>
-                <viewController id="8Zy-Ja-Dah" customClass="MobileListViewController" customModule="CleanMobilePrice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MobileListViewController" id="8Zy-Ja-Dah" customClass="MobileListViewController" customModule="CleanMobilePrice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q66-QB-6Ar">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +202,7 @@ Label 2</string>
         <!--mobile name-->
         <scene sceneID="ZH7-gA-AOQ">
             <objects>
-                <viewController id="3aL-nD-pIp" customClass="MobileDetailsViewController" customModule="CleanMobilePrice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MobileDetailsViewController" id="3aL-nD-pIp" customClass="MobileDetailsViewController" customModule="CleanMobilePrice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Th-7n-Vdd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
