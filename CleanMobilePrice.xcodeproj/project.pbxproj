@@ -17,6 +17,7 @@
 		2D1499AD20A9284100C15E23 /* MobileDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1499A920A9284100C15E23 /* MobileDetailsViewControllerTests.swift */; };
 		2D1499AE20A9284100C15E23 /* MobileDetailsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1499AA20A9284100C15E23 /* MobileDetailsInteractorTests.swift */; };
 		2D1499B020A9284100C15E23 /* MobileDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1499AC20A9284100C15E23 /* MobileDetailsPresenterTests.swift */; };
+		2D1499B220A9826000C15E23 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1499B120A9826000C15E23 /* Test.swift */; };
 		2D44B7A5209B13440043EF90 /* MobileListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A4209B13440043EF90 /* MobileListTableViewCell.swift */; };
 		2D44B7B0209C421F0043EF90 /* MobileDetailsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A7209C421F0043EF90 /* MobileDetailsStore.swift */; };
 		2D44B7B1209C421F0043EF90 /* MobileDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A8209C421F0043EF90 /* MobileDetailsPresenter.swift */; };
@@ -63,6 +64,7 @@
 		2D1499A920A9284100C15E23 /* MobileDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsViewControllerTests.swift; sourceTree = "<group>"; };
 		2D1499AA20A9284100C15E23 /* MobileDetailsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsInteractorTests.swift; sourceTree = "<group>"; };
 		2D1499AC20A9284100C15E23 /* MobileDetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsPresenterTests.swift; sourceTree = "<group>"; };
+		2D1499B120A9826000C15E23 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		2D44B7A4209B13440043EF90 /* MobileListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListTableViewCell.swift; sourceTree = "<group>"; };
 		2D44B7A7209C421F0043EF90 /* MobileDetailsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsStore.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsStore.swift; sourceTree = SOURCE_ROOT; };
 		2D44B7A8209C421F0043EF90 /* MobileDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsPresenter.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsPresenter.swift; sourceTree = SOURCE_ROOT; };
@@ -238,6 +240,7 @@
 			children = (
 				A85B5443209AEE7F0005197A /* Mobile.swift */,
 				A8E2E5E4209AC6F8008B9595 /* MobileImage.swift */,
+				2D1499B120A9826000C15E23 /* Test.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				A85B5451209AEE7F0005197A /* MobileListStore.swift in Sources */,
 				2D44B7B6209C421F0043EF90 /* MobileDetailsInteractor.swift in Sources */,
 				2D44B7A5209B13440043EF90 /* MobileListTableViewCell.swift in Sources */,
+				2D1499B220A9826000C15E23 /* Test.swift in Sources */,
 				A85B544D209AEE7F0005197A /* MobileListInteractor.swift in Sources */,
 				A85B5452209AEE7F0005197A /* MobileListViewController.swift in Sources */,
 				2D44B7B3209C421F0043EF90 /* MobileDetailsRouter.swift in Sources */,

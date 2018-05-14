@@ -93,6 +93,8 @@ class MobileListInteractor: MobileListInteractorInterface {
   func removeMobileFromFavorite(request: MobileList.AddRemoveFavorite.Request) {
     if let mobileID = displayingMobiles?[request.index].id {
       dataManager.removeFavorite(mobileID: mobileID)
+      let response = MobileList.PresentMobile.Response(mobiles: displayingMobiles, listType: listType)
+      presenter.presentMobiles(response: response)
     }
   }
 }

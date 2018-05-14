@@ -116,6 +116,16 @@ extension MobileListViewController: UITableViewDelegate {
     interactor.setSelectedMobile(request: MobileList.SetSelectedMobile.Request(selectedIndex: indexPath.row))
     router.navigateToDetails()
   }
+  
+  func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete {
+      interactor.removeMobileFromFavorite(request: MobileList.AddRemoveFavorite.Request(index: indexPath.row))
+    }
+  }
+  
+  func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    return viewModel.listType == .favorite ? .delete : .none
+  }
 }
 
 extension MobileListViewController: MobileListTableViewCellDelegate {
