@@ -3,21 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		24BD41D902FC0E0E7B309090 /* Pods_CleanMobilePriceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527B8F33B0816C5502D321BA /* Pods_CleanMobilePriceTests.framework */; };
+		2D14996820A3F66A00C15E23 /* MobileImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14996720A3F66A00C15E23 /* MobileImageCollectionViewCell.swift */; };
+		2D14996B20A456D100C15E23 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14996A20A456D100C15E23 /* DataManager.swift */; };
+		2D14996D20A53D9C00C15E23 /* MobileListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14996C20A53D9B00C15E23 /* MobileListViewControllerTests.swift */; };
+		2D14999020A5633700C15E23 /* MobileListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14998D20A5633700C15E23 /* MobileListInteractorTests.swift */; };
+		2D14999220A5633700C15E23 /* MobileListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14998F20A5633700C15E23 /* MobileListPresenterTests.swift */; };
+		2D14999420A5A32B00C15E23 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14999320A5A32B00C15E23 /* Seeds.swift */; };
+		2D1499AD20A9284100C15E23 /* MobileDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1499A920A9284100C15E23 /* MobileDetailsViewControllerTests.swift */; };
+		2D1499AE20A9284100C15E23 /* MobileDetailsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1499AA20A9284100C15E23 /* MobileDetailsInteractorTests.swift */; };
+		2D1499B020A9284100C15E23 /* MobileDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1499AC20A9284100C15E23 /* MobileDetailsPresenterTests.swift */; };
+		2D44B7A5209B13440043EF90 /* MobileListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A4209B13440043EF90 /* MobileListTableViewCell.swift */; };
+		2D44B7B0209C421F0043EF90 /* MobileDetailsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A7209C421F0043EF90 /* MobileDetailsStore.swift */; };
+		2D44B7B1209C421F0043EF90 /* MobileDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A8209C421F0043EF90 /* MobileDetailsPresenter.swift */; };
+		2D44B7B2209C421F0043EF90 /* MobileDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A9209C421F0043EF90 /* MobileDetailsWorker.swift */; };
+		2D44B7B3209C421F0043EF90 /* MobileDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7AA209C421F0043EF90 /* MobileDetailsRouter.swift */; };
+		2D44B7B4209C421F0043EF90 /* MobileDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7AB209C421F0043EF90 /* MobileDetailsModels.swift */; };
+		2D44B7B5209C421F0043EF90 /* MobileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7AC209C421F0043EF90 /* MobileDetailsViewController.swift */; };
+		2D44B7B6209C421F0043EF90 /* MobileDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7AD209C421F0043EF90 /* MobileDetailsInteractor.swift */; };
+		2D44B7B7209C421F0043EF90 /* MobileDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7AE209C421F0043EF90 /* MobileDetailsConfigurator.swift */; };
 		A843984D209AA00C0022288F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843984C209AA00C0022288F /* AppDelegate.swift */; };
-		A843984F209AA00C0022288F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843984E209AA00C0022288F /* ViewController.swift */; };
 		A8439852209AA00C0022288F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8439850209AA00C0022288F /* Main.storyboard */; };
 		A8439854209AA00E0022288F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8439853209AA00E0022288F /* Assets.xcassets */; };
 		A8439857209AA00E0022288F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8439855209AA00E0022288F /* LaunchScreen.storyboard */; };
-		A8439862209AA00E0022288F /* CleanMobilePriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8439861209AA00E0022288F /* CleanMobilePriceTests.swift */; };
-		A843987D209AA10D0022288F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843987B209AA10C0022288F /* APIManager.swift */; };
-		A843987E209AA10D0022288F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843987C209AA10C0022288F /* DataManager.swift */; };
+		A85B544B209AEE7F0005197A /* MobileListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5442209AEE7F0005197A /* MobileListConfigurator.swift */; };
+		A85B544C209AEE7F0005197A /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5443209AEE7F0005197A /* Mobile.swift */; };
+		A85B544D209AEE7F0005197A /* MobileListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5444209AEE7F0005197A /* MobileListInteractor.swift */; };
+		A85B544E209AEE7F0005197A /* MobileListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5445209AEE7F0005197A /* MobileListModels.swift */; };
+		A85B544F209AEE7F0005197A /* MobileListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5446209AEE7F0005197A /* MobileListPresenter.swift */; };
+		A85B5450209AEE7F0005197A /* MobileListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5447209AEE7F0005197A /* MobileListRouter.swift */; };
+		A85B5451209AEE7F0005197A /* MobileListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5448209AEE7F0005197A /* MobileListStore.swift */; };
+		A85B5452209AEE7F0005197A /* MobileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5449209AEE7F0005197A /* MobileListViewController.swift */; };
+		A85B5453209AEE7F0005197A /* MobileListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B544A209AEE7F0005197A /* MobileListWorker.swift */; };
 		A8E2E5E6209AC6F8008B9595 /* MobileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2E5E4209AC6F8008B9595 /* MobileImage.swift */; };
-		A8E2E5E7209AC6F8008B9595 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2E5E5209AC6F8008B9595 /* Mobile.swift */; };
 		DFCF41C32D00C75E1276460E /* Pods_CleanMobilePrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481C277973C04FD9BB122126 /* Pods_CleanMobilePrice.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,24 +54,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D14996720A3F66A00C15E23 /* MobileImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D14996A20A456D100C15E23 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		2D14996C20A53D9B00C15E23 /* MobileListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewControllerTests.swift; sourceTree = "<group>"; };
+		2D14998D20A5633700C15E23 /* MobileListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListInteractorTests.swift; sourceTree = "<group>"; };
+		2D14998F20A5633700C15E23 /* MobileListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListPresenterTests.swift; sourceTree = "<group>"; };
+		2D14999320A5A32B00C15E23 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
+		2D1499A920A9284100C15E23 /* MobileDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		2D1499AA20A9284100C15E23 /* MobileDetailsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsInteractorTests.swift; sourceTree = "<group>"; };
+		2D1499AC20A9284100C15E23 /* MobileDetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsPresenterTests.swift; sourceTree = "<group>"; };
+		2D44B7A4209B13440043EF90 /* MobileListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListTableViewCell.swift; sourceTree = "<group>"; };
+		2D44B7A7209C421F0043EF90 /* MobileDetailsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsStore.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsStore.swift; sourceTree = SOURCE_ROOT; };
+		2D44B7A8209C421F0043EF90 /* MobileDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsPresenter.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsPresenter.swift; sourceTree = SOURCE_ROOT; };
+		2D44B7A9209C421F0043EF90 /* MobileDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsWorker.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsWorker.swift; sourceTree = SOURCE_ROOT; };
+		2D44B7AA209C421F0043EF90 /* MobileDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsRouter.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsRouter.swift; sourceTree = SOURCE_ROOT; };
+		2D44B7AB209C421F0043EF90 /* MobileDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsModels.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsModels.swift; sourceTree = SOURCE_ROOT; };
+		2D44B7AC209C421F0043EF90 /* MobileDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsViewController.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
+		2D44B7AD209C421F0043EF90 /* MobileDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsInteractor.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsInteractor.swift; sourceTree = SOURCE_ROOT; };
+		2D44B7AE209C421F0043EF90 /* MobileDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsConfigurator.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsConfigurator.swift; sourceTree = SOURCE_ROOT; };
 		2DD129CB6777ABB29ED9B500 /* Pods-CleanMobilePriceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMobilePriceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanMobilePriceTests/Pods-CleanMobilePriceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		481C277973C04FD9BB122126 /* Pods_CleanMobilePrice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanMobilePrice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		527B8F33B0816C5502D321BA /* Pods_CleanMobilePriceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanMobilePriceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		895D2A0741CA55EFE6336E91 /* Pods-CleanMobilePrice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMobilePrice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanMobilePrice/Pods-CleanMobilePrice.debug.xcconfig"; sourceTree = "<group>"; };
 		A8439849209AA00C0022288F /* CleanMobilePrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanMobilePrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A843984C209AA00C0022288F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A843984E209AA00C0022288F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8439851209AA00C0022288F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8439853209AA00E0022288F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8439856209AA00E0022288F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8439858209AA00E0022288F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A843985D209AA00E0022288F /* CleanMobilePriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanMobilePriceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8439861209AA00E0022288F /* CleanMobilePriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMobilePriceTests.swift; sourceTree = "<group>"; };
 		A8439863209AA00E0022288F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A843987B209AA10C0022288F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		A843987C209AA10C0022288F /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A85B5442209AEE7F0005197A /* MobileListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListConfigurator.swift; sourceTree = "<group>"; };
+		A85B5443209AEE7F0005197A /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		A85B5444209AEE7F0005197A /* MobileListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListInteractor.swift; sourceTree = "<group>"; };
+		A85B5445209AEE7F0005197A /* MobileListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListModels.swift; sourceTree = "<group>"; };
+		A85B5446209AEE7F0005197A /* MobileListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListPresenter.swift; sourceTree = "<group>"; };
+		A85B5447209AEE7F0005197A /* MobileListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListRouter.swift; sourceTree = "<group>"; };
+		A85B5448209AEE7F0005197A /* MobileListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListStore.swift; sourceTree = "<group>"; };
+		A85B5449209AEE7F0005197A /* MobileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewController.swift; sourceTree = "<group>"; };
+		A85B544A209AEE7F0005197A /* MobileListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListWorker.swift; sourceTree = "<group>"; };
 		A8E2E5E4209AC6F8008B9595 /* MobileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileImage.swift; sourceTree = "<group>"; };
-		A8E2E5E5209AC6F8008B9595 /* Mobile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		AA7625B8255984AF560A0F9E /* Pods-CleanMobilePriceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMobilePriceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanMobilePriceTests/Pods-CleanMobilePriceTests.release.xcconfig"; sourceTree = "<group>"; };
 		F8B767778EF911AF39F11410 /* Pods-CleanMobilePrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMobilePrice.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanMobilePrice/Pods-CleanMobilePrice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +118,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D14996920A4569900C15E23 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D14996A20A456D100C15E23 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2D14996E20A53DA200C15E23 /* MobileList */ = {
+			isa = PBXGroup;
+			children = (
+				2D14996C20A53D9B00C15E23 /* MobileListViewControllerTests.swift */,
+				2D14998D20A5633700C15E23 /* MobileListInteractorTests.swift */,
+				2D14998F20A5633700C15E23 /* MobileListPresenterTests.swift */,
+			);
+			path = MobileList;
+			sourceTree = "<group>";
+		};
+		2D1499A820A9282E00C15E23 /* MobileDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2D1499A920A9284100C15E23 /* MobileDetailsViewControllerTests.swift */,
+				2D1499AA20A9284100C15E23 /* MobileDetailsInteractorTests.swift */,
+				2D1499AC20A9284100C15E23 /* MobileDetailsPresenterTests.swift */,
+			);
+			path = MobileDetails;
+			sourceTree = "<group>";
+		};
 		A8439840209AA00C0022288F = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +169,10 @@
 		A843984B209AA00C0022288F /* CleanMobilePrice */ = {
 			isa = PBXGroup;
 			children = (
+				2D14996920A4569900C15E23 /* Services */,
 				A8E2E5E3209AC6F0008B9595 /* Models */,
 				A843986C209AA08B0022288F /* Scenes */,
-				A843987A209AA0F00022288F /* Services */,
 				A843984C209AA00C0022288F /* AppDelegate.swift */,
-				A843984E209AA00C0022288F /* ViewController.swift */,
 				A8439850209AA00C0022288F /* Main.storyboard */,
 				A8439853209AA00E0022288F /* Assets.xcassets */,
 				A8439855209AA00E0022288F /* LaunchScreen.storyboard */,
@@ -113,8 +184,10 @@
 		A8439860209AA00E0022288F /* CleanMobilePriceTests */ = {
 			isa = PBXGroup;
 			children = (
-				A8439861209AA00E0022288F /* CleanMobilePriceTests.swift */,
+				2D14996E20A53DA200C15E23 /* MobileList */,
+				2D1499A820A9282E00C15E23 /* MobileDetails */,
 				A8439863209AA00E0022288F /* Info.plist */,
+				2D14999320A5A32B00C15E23 /* Seeds.swift */,
 			);
 			path = CleanMobilePriceTests;
 			sourceTree = "<group>";
@@ -131,22 +204,31 @@
 		A8439879209AA0C10022288F /* MobileList */ = {
 			isa = PBXGroup;
 			children = (
+				A85B5442209AEE7F0005197A /* MobileListConfigurator.swift */,
+				A85B5444209AEE7F0005197A /* MobileListInteractor.swift */,
+				A85B5445209AEE7F0005197A /* MobileListModels.swift */,
+				A85B5446209AEE7F0005197A /* MobileListPresenter.swift */,
+				A85B5447209AEE7F0005197A /* MobileListRouter.swift */,
+				A85B5448209AEE7F0005197A /* MobileListStore.swift */,
+				A85B5449209AEE7F0005197A /* MobileListViewController.swift */,
+				A85B544A209AEE7F0005197A /* MobileListWorker.swift */,
+				2D44B7A4209B13440043EF90 /* MobileListTableViewCell.swift */,
 			);
 			path = MobileList;
-			sourceTree = "<group>";
-		};
-		A843987A209AA0F00022288F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A843987B209AA10C0022288F /* APIManager.swift */,
-				A843987C209AA10C0022288F /* DataManager.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		A843987F209AA1500022288F /* MobileDetails */ = {
 			isa = PBXGroup;
 			children = (
+				2D44B7A7209C421F0043EF90 /* MobileDetailsStore.swift */,
+				2D44B7A8209C421F0043EF90 /* MobileDetailsPresenter.swift */,
+				2D44B7A9209C421F0043EF90 /* MobileDetailsWorker.swift */,
+				2D44B7AA209C421F0043EF90 /* MobileDetailsRouter.swift */,
+				2D44B7AB209C421F0043EF90 /* MobileDetailsModels.swift */,
+				2D44B7AC209C421F0043EF90 /* MobileDetailsViewController.swift */,
+				2D44B7AD209C421F0043EF90 /* MobileDetailsInteractor.swift */,
+				2D44B7AE209C421F0043EF90 /* MobileDetailsConfigurator.swift */,
+				2D14996720A3F66A00C15E23 /* MobileImageCollectionViewCell.swift */,
 			);
 			path = MobileDetails;
 			sourceTree = "<group>";
@@ -154,7 +236,7 @@
 		A8E2E5E3209AC6F0008B9595 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A8E2E5E5209AC6F8008B9595 /* Mobile.swift */,
+				A85B5443209AEE7F0005197A /* Mobile.swift */,
 				A8E2E5E4209AC6F8008B9595 /* MobileImage.swift */,
 			);
 			path = Models;
@@ -233,15 +315,17 @@
 				TargetAttributes = {
 					A8439848209AA00C0022288F = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 					A843985C209AA00E0022288F = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = A8439848209AA00C0022288F;
 					};
 				};
 			};
 			buildConfigurationList = A8439844209AA00C0022288F /* Build configuration list for PBXProject "CleanMobilePrice" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -347,12 +431,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A843984F209AA00C0022288F /* ViewController.swift in Sources */,
-				A843987E209AA10D0022288F /* DataManager.swift in Sources */,
-				A843987D209AA10D0022288F /* APIManager.swift in Sources */,
-				A8E2E5E7209AC6F8008B9595 /* Mobile.swift in Sources */,
+				2D14996820A3F66A00C15E23 /* MobileImageCollectionViewCell.swift in Sources */,
+				2D44B7B4209C421F0043EF90 /* MobileDetailsModels.swift in Sources */,
+				A85B5450209AEE7F0005197A /* MobileListRouter.swift in Sources */,
+				A85B544C209AEE7F0005197A /* Mobile.swift in Sources */,
+				2D14996B20A456D100C15E23 /* DataManager.swift in Sources */,
+				A85B544F209AEE7F0005197A /* MobileListPresenter.swift in Sources */,
+				A85B5453209AEE7F0005197A /* MobileListWorker.swift in Sources */,
+				A85B544E209AEE7F0005197A /* MobileListModels.swift in Sources */,
+				2D44B7B7209C421F0043EF90 /* MobileDetailsConfigurator.swift in Sources */,
+				A85B544B209AEE7F0005197A /* MobileListConfigurator.swift in Sources */,
 				A8E2E5E6209AC6F8008B9595 /* MobileImage.swift in Sources */,
+				2D44B7B2209C421F0043EF90 /* MobileDetailsWorker.swift in Sources */,
+				A85B5451209AEE7F0005197A /* MobileListStore.swift in Sources */,
+				2D44B7B6209C421F0043EF90 /* MobileDetailsInteractor.swift in Sources */,
+				2D44B7A5209B13440043EF90 /* MobileListTableViewCell.swift in Sources */,
+				A85B544D209AEE7F0005197A /* MobileListInteractor.swift in Sources */,
+				A85B5452209AEE7F0005197A /* MobileListViewController.swift in Sources */,
+				2D44B7B3209C421F0043EF90 /* MobileDetailsRouter.swift in Sources */,
+				2D44B7B1209C421F0043EF90 /* MobileDetailsPresenter.swift in Sources */,
+				2D44B7B0209C421F0043EF90 /* MobileDetailsStore.swift in Sources */,
 				A843984D209AA00C0022288F /* AppDelegate.swift in Sources */,
+				2D44B7B5209C421F0043EF90 /* MobileDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +460,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8439862209AA00E0022288F /* CleanMobilePriceTests.swift in Sources */,
+				2D1499AD20A9284100C15E23 /* MobileDetailsViewControllerTests.swift in Sources */,
+				2D1499AE20A9284100C15E23 /* MobileDetailsInteractorTests.swift in Sources */,
+				2D14999220A5633700C15E23 /* MobileListPresenterTests.swift in Sources */,
+				2D14999020A5633700C15E23 /* MobileListInteractorTests.swift in Sources */,
+				2D14996D20A53D9C00C15E23 /* MobileListViewControllerTests.swift in Sources */,
+				2D14999420A5A32B00C15E23 /* Seeds.swift in Sources */,
+				2D1499B020A9284100C15E23 /* MobileDetailsPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +551,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -499,11 +605,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -516,10 +621,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWT52B2348;
 				INFOPLIST_FILE = CleanMobilePrice/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrhangz.CleanMobilePrice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -535,10 +638,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWT52B2348;
 				INFOPLIST_FILE = CleanMobilePrice/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrhangz.CleanMobilePrice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -555,11 +656,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWT52B2348;
 				INFOPLIST_FILE = CleanMobilePriceTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrhangz.CleanMobilePriceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -577,11 +674,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWT52B2348;
 				INFOPLIST_FILE = CleanMobilePriceTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrhangz.CleanMobilePriceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

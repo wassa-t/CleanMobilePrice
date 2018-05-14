@@ -15,7 +15,7 @@
         <!--Mobile List View Controller-->
         <scene sceneID="PjR-xW-GnE">
             <objects>
-                <viewController id="8Zy-Ja-Dah" customClass="MobileListViewController" customModule="MobilePrice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MobileListViewController" id="8Zy-Ja-Dah" customClass="MobileListViewController" customModule="CleanMobilePrice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q66-QB-6Ar">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,21 +34,21 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="listTypeTappedWithSender:" destination="8Zy-Ja-Dah" eventType="touchUpInside" id="8Jr-RT-4Gq"/>
+                                            <action selector="sectionTappedWithSender:" destination="8Zy-Ja-Dah" eventType="touchUpInside" id="5RY-hh-HRo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3O-1j-2nb">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="43"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="Favourite">
+                                        <state key="normal" title="Favorite">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="listTypeTappedWithSender:" destination="8Zy-Ja-Dah" eventType="touchUpInside" id="ozL-vn-CQ9"/>
+                                            <action selector="sectionTappedWithSender:" destination="8Zy-Ja-Dah" eventType="touchUpInside" id="jlo-he-He6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -69,7 +69,7 @@
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhoneCell" rowHeight="100" id="3tz-bx-3Fy" customClass="MobileTableViewCell" customModule="MobilePrice" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhoneCell" rowHeight="100" id="3tz-bx-3Fy" customClass="MobileListTableViewCell" customModule="CleanMobilePrice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3tz-bx-3Fy" id="fvz-vf-ASd">
@@ -95,13 +95,13 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qia-U5-Cg4">
                                                     <rect key="frame" x="335" y="8" width="24" height="24"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="bSb-Lh-40Q"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="24" id="bSb-Lh-40Q"/>
                                                         <constraint firstAttribute="height" constant="24" id="vYa-Ks-c70"/>
                                                     </constraints>
                                                     <state key="normal" title="Button" image="star_inactive"/>
                                                     <state key="selected" image="star_active"/>
                                                     <connections>
-                                                        <action selector="addToFavouriteWithSender:" destination="3tz-bx-3Fy" eventType="touchUpInside" id="EgQ-hE-3sh"/>
+                                                        <action selector="addToFavoriteWithSender:" destination="3tz-bx-3Fy" eventType="touchUpInside" id="Zud-i5-Cf1"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtK-SB-zHX">
@@ -115,6 +115,7 @@ Label 2</string>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOf-dN-JkM">
                                                     <rect key="frame" x="96" y="69" width="156" height="20"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" constant="156" placeholder="YES" id="48G-PQ-3Zg"/>
                                                         <constraint firstAttribute="height" constant="20" id="nep-1w-VFf"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -125,7 +126,7 @@ Label 2</string>
                                                     <rect key="frame" x="260" y="69" width="84" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="3U0-hV-iul"/>
-                                                        <constraint firstAttribute="width" constant="84" id="qHq-3L-aKB"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84" id="qHq-3L-aKB"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
@@ -153,7 +154,7 @@ Label 2</string>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="gtK-SB-zHX" id="w4x-gn-5c6"/>
-                                            <outlet property="favouriteButton" destination="Qia-U5-Cg4" id="JYj-Vk-e4O"/>
+                                            <outlet property="favoriteButton" destination="Qia-U5-Cg4" id="JYj-Vk-e4O"/>
                                             <outlet property="nameLabel" destination="cmZ-cn-shm" id="5aT-mS-G9s"/>
                                             <outlet property="priceLabel" destination="fOf-dN-JkM" id="AGk-pa-d2o"/>
                                             <outlet property="ratingLabel" destination="AHW-Sk-ZUP" id="7sl-xx-RYr"/>
@@ -183,15 +184,15 @@ Label 2</string>
                         <barButtonItem key="backBarButtonItem" title=" " id="zRX-zc-hJx"/>
                         <barButtonItem key="rightBarButtonItem" title="Sort" id="ibF-Lr-lC0">
                             <connections>
-                                <action selector="sortTappedWithSender:" destination="8Zy-Ja-Dah" id="q9r-kH-6fQ"/>
+                                <action selector="sortTappedWithSender:" destination="8Zy-Ja-Dah" id="5KZ-3C-6Cu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="allButton" destination="yPb-Jk-Yw8" id="QfS-qg-kZ8"/>
-                        <outlet property="favouriteButton" destination="K3O-1j-2nb" id="3Og-gp-WSv"/>
+                        <outlet property="allButton" destination="yPb-Jk-Yw8" id="tkx-wR-lPh"/>
+                        <outlet property="favoriteButton" destination="K3O-1j-2nb" id="h3h-dT-Q0i"/>
                         <outlet property="tableView" destination="c2n-DQ-Pf8" id="Zex-Xs-eZu"/>
-                        <segue destination="3aL-nD-pIp" kind="show" identifier="MobileDetails" id="kSD-sb-6Ev"/>
+                        <segue destination="3aL-nD-pIp" kind="show" identifier="ShowDetailsScene" id="kSD-sb-6Ev"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3h-JH-OZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -201,7 +202,7 @@ Label 2</string>
         <!--mobile name-->
         <scene sceneID="ZH7-gA-AOQ">
             <objects>
-                <viewController id="3aL-nD-pIp" customClass="MobileDetailsViewController" customModule="MobilePrice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MobileDetailsViewController" id="3aL-nD-pIp" customClass="MobileDetailsViewController" customModule="CleanMobilePrice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Th-7n-Vdd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,7 +217,7 @@ Label 2</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="hE2-mV-ALN" customClass="MobileImageCollectionViewCell" customModule="MobilePrice" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="hE2-mV-ALN" customClass="MobileImageCollectionViewCell" customModule="CleanMobilePrice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="17" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

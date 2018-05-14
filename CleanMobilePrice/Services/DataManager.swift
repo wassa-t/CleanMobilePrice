@@ -1,24 +1,46 @@
+//
+//  DataManager.swift
+//  CleanMobilePrice
+//
+//  Created by SCBUX on 10/5/2561 BE.
+//  Copyright © 2561 Teerawat Vanasapdamrong. All rights reserved.
+//
+
 import Foundation
 
 protocol DataManagerProtocol {
-    func getFavourites(completion: @escaping (Set<Int>) -> Void)
-    func setFavourites(favourites: Set<Int>)
+  func addFavorite(mobileID: Int)
+  func removeFavorite(mobileID: Int)
+  var favoriteIDs: Set<Int>! { get }
 }
 
 class DataManager: DataManagerProtocol {
-    static let shared: DataManager = DataManager()
-    
-    func getFavourites(completion: @escaping (Set<Int>) -> Void) {
-        var favourites: Set<Int> = []
-        if let data = UserDefaults.standard.object(forKey: "favourites") as? Data {
-            favourites = NSKeyedUnarchiver.unarchiveObject(with: data) as! Set<Int>
-        }
-        completion(favourites)
+  static let shared: DataManager = DataManager()
+  var favoriteIDs: Set<Int>! = []
+  
+  init() {
+    getFavorites()
+  }
+  
+  private func getFavorites() {
+    if let data = UserDefaults.standard.object(forKey: "favorites") as? Data {
+      favoriteIDs = NSKeyedUnarchiver.unarchiveObject(with: data) as! Set<Int>
     }
-    
-    func setFavourites(favourites: Set<Int>) {
-        let data = NSKeyedArchiver.archivedData(withRootObject: favourites)
-        UserDefaults.standard.set(data, forKey: "favourites")
-        UserDefaults.standard.synchronize()
-    }
+  }
+  
+  func addFavorite(mobileID: Int) {
+    favoriteIDs.insert(mobileID)
+    saveData()
+  }
+  
+  func removeFavorite(mobileID: Int) {
+    favoriteIDs.remove(mobileID)
+    saveData()
+  }
+  
+  private func saveData() {
+    let data = NSKeyedArchiver.archivedData(withRootObject: favoriteIDs)
+    UserDefaults.standard.set(data, forKey: "favorites")
+    UserDefaults.standard.synchronize()
+  }
 }

@@ -1,15 +1,18 @@
 import Foundation
 import ObjectMapper
 
+//
+// The entity or business object
+//
 struct MobileImage: Mappable {
     
     var mobileID: Int?
-    var imageURL: String?
+    var imagePath: String?
     var id: Int?
     
     internal init(mobileID: Int, imageURL: String, id: Int) {
         self.id = id
-        self.imageURL = imageURL
+        self.imagePath = imageURL
         self.mobileID = mobileID
     }
     
@@ -19,7 +22,19 @@ struct MobileImage: Mappable {
     
     mutating func mapping(map: Map) {
         mobileID <- map["mobile_id"]
-        imageURL <- map["url"]
+        imagePath <- map["url"]
         id <- map["id"]
     }
+  
+  var imageURL: URL? {
+    if let imagePath = imagePath {
+      var path = imagePath
+      if !imagePath.hasPrefix("http://") && !imagePath.hasPrefix("https://") {
+        path = "http://\(imagePath)"
+      }
+      return URL(string: path)
+    } else {
+      return nil
+    }
+  }
 }
