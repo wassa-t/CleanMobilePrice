@@ -125,8 +125,10 @@ class MobileListInteractorTests: XCTestCase {
     XCTAssert(dataManagerSpy.favoriteIDs.contains(Seeds.Mobiles.xPhone2.id!))
   }
   
-  func testRemoveMobileFromFavoriteShouldAskDataManagerToRemoveFavorite() {
+  func testRemoveMobileFromFavoriteShouldAskDataManagerToRemoveFavoriteAndPresenterToPresentMobiles() {
     // Given
+    let mobileListPresenterSpy = MobileListInteractorOutputSpy()
+    sut.presenter = mobileListPresenterSpy
     sut.mobiles = [Seeds.Mobiles.xPhone2, Seeds.Mobiles.xPhoneX]
     let dataManagerSpy = DataManagerSpy()
     dataManagerSpy.addFavorite(mobileID: Seeds.Mobiles.xPhone2.id!)
@@ -140,5 +142,6 @@ class MobileListInteractorTests: XCTestCase {
     XCTAssert(dataManagerSpy.removeFavoriteIsCalled)
     XCTAssert(dataManagerSpy.favoriteIDs.contains(Seeds.Mobiles.xPhone2.id!))
     XCTAssertFalse(dataManagerSpy.favoriteIDs.contains(Seeds.Mobiles.xPhoneX.id!))
+    XCTAssert(mobileListPresenterSpy.presentMobilesIsCalled)
   }
 }

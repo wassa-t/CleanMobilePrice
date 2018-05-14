@@ -20,7 +20,8 @@ class MobileDetailsStore: MobileDetailsStoreProtocol {
           let array = JSON(value)
           var images: [MobileImage] = []
           for json in array.arrayValue {
-            if let image = MobileImage(JSON: json.dictionaryObject!) {
+            let decoder = JSONDecoder()
+            if let image = try? decoder.decode(MobileImage.self, from: json.rawData()) {
               images.append(image)
             }
           }

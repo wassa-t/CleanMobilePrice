@@ -1,15 +1,11 @@
 import Foundation
-import ObjectMapper
 
 enum Result<T> {
   case success(T)
   case failure(Error)
 }
 
-//
-// The entity or business object
-//
-struct Mobile: Mappable {
+struct Mobile: Codable {
   
   var name: String?
   var price: Float?
@@ -19,28 +15,9 @@ struct Mobile: Mappable {
   var rating: Float?
   var description: String?
   
-  internal init(name: String, price: Float, thumbImageURL: String, id: Int, brand: String, rating: Float, description: String) {
-    self.name = name
-    self.price = price
-    self.thumbImage = thumbImageURL
-    self.id = id
-    self.brand = brand
-    self.rating = rating
-    self.description = description
-  }
-  
-  init?(map: Map) {
-    
-  }
-  
-  mutating func mapping(map: Map) {
-    name <- map["name"]
-    price <- map["price"]
-    thumbImage <- map["thumbImageURL"]
-    id <- map["id"]
-    brand <- map["brand"]
-    rating <- map["rating"]
-    description <- map["description"]
+  private enum CodingKeys: String, CodingKey {
+    case name, price, id, brand, rating, description
+    case thumbImage = "thumbImageURL"
   }
   
   var thumbImageURL: URL? {

@@ -20,7 +20,8 @@ class MobileListStore: MobileListStoreProtocol {
           let array = JSON(value)
           var mobiles: [Mobile] = []
           for json in array.arrayValue {
-            if let mobile = Mobile(JSON: json.dictionaryObject!) {
+            let decoder = JSONDecoder()
+            if let mobile = try? decoder.decode(Mobile.self, from: json.rawData()) {
               mobiles.append(mobile)
             }
           }

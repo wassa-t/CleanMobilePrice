@@ -29,7 +29,7 @@ class MobileListPresenter: MobileListPresenterInterface {
           price: mobile.priceString,
           rating: mobile.ratingString,
           thumbImageURL: mobile.thumbImageURL,
-          isFavorite: dataManager.favoriteIDs.contains(mobile.id!)
+          isFavorite: mobile.id != nil ? dataManager.favoriteIDs.contains(mobile.id!) : false
         )
         displayedMobiles.append(displayedMobile)
       }

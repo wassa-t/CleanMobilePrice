@@ -27,7 +27,7 @@ class MobileDetailsPresenter: MobileDetailsPresenterInterface {
       price: mobile.priceString,
       rating: mobile.ratingString,
       thumbImageURL: mobile.thumbImageURL,
-      isFavorite: dataManager.favoriteIDs.contains(mobile.id!)
+      isFavorite: mobile.id != nil ? dataManager.favoriteIDs.contains(mobile.id!) : false
     )
     let viewModel = MobileDetails.DisplayDetails.ViewModel(displayedMobile: displayedMobile)
     viewController.displayDetails(viewModel: viewModel)
