@@ -15,6 +15,7 @@ protocol MobileDetailsPresenterInterface {
 
 class MobileDetailsPresenter: MobileDetailsPresenterInterface {
   weak var viewController: MobileDetailsViewControllerInterface!
+  var dataManager: DataManagerProtocol = DataManager.shared
 
   // MARK: - Presentation logic
 
@@ -26,7 +27,7 @@ class MobileDetailsPresenter: MobileDetailsPresenterInterface {
       price: mobile.priceString,
       rating: mobile.ratingString,
       thumbImageURL: mobile.thumbImageURL,
-      isFavorite: mobile.isFavorite
+      isFavorite: dataManager.favoriteIDs.contains(mobile.id!)
     )
     let viewModel = MobileDetails.DisplayDetails.ViewModel(displayedMobile: displayedMobile)
     viewController.displayDetails(viewModel: viewModel)

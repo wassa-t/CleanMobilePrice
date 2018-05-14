@@ -76,7 +76,7 @@ class MobileListViewController: UIViewController, MobileListViewControllerInterf
     interactor.changeList(request: request)
   }
   
-  private func sortMobiles(sortingType: SortingType) {
+  func sortMobiles(sortingType: SortingType) {
     let request = MobileList.SortMobiles.Request(sortingType: sortingType)
     interactor.sortMobiles(request: request)
   }

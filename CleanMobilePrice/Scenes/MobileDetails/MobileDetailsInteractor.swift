@@ -23,12 +23,19 @@ class MobileDetailsInteractor: MobileDetailsInteractorInterface {
   
   // MARK: - Business logic
   
-  func displayDetails(request: MobileDetails.DisplayDetails.Request) {
+  func displayDetails(request:
+    MobileDetails.DisplayDetails.Request) {
+    guard let mobile = mobile else {
+      return
+    }
     let response = MobileDetails.DisplayDetails.Response(mobile: mobile)
     presenter.presentDetails(response: response)
   }
   
   func getImages(request: MobileDetails.GetImages.Request) {
+    guard let mobile = mobile else {
+      return
+    }
     worker?.getImages(for: mobile.id!) { [weak self] in
       if case let Result.success(data) = $0 {
         self?.images = data

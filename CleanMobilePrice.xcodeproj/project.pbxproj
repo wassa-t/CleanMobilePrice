@@ -11,6 +11,12 @@
 		2D14996820A3F66A00C15E23 /* MobileImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14996720A3F66A00C15E23 /* MobileImageCollectionViewCell.swift */; };
 		2D14996B20A456D100C15E23 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14996A20A456D100C15E23 /* DataManager.swift */; };
 		2D14996D20A53D9C00C15E23 /* MobileListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14996C20A53D9B00C15E23 /* MobileListViewControllerTests.swift */; };
+		2D14999020A5633700C15E23 /* MobileListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14998D20A5633700C15E23 /* MobileListInteractorTests.swift */; };
+		2D14999220A5633700C15E23 /* MobileListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14998F20A5633700C15E23 /* MobileListPresenterTests.swift */; };
+		2D14999420A5A32B00C15E23 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14999320A5A32B00C15E23 /* Seeds.swift */; };
+		2D1499AD20A9284100C15E23 /* MobileDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1499A920A9284100C15E23 /* MobileDetailsViewControllerTests.swift */; };
+		2D1499AE20A9284100C15E23 /* MobileDetailsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1499AA20A9284100C15E23 /* MobileDetailsInteractorTests.swift */; };
+		2D1499B020A9284100C15E23 /* MobileDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1499AC20A9284100C15E23 /* MobileDetailsPresenterTests.swift */; };
 		2D44B7A5209B13440043EF90 /* MobileListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A4209B13440043EF90 /* MobileListTableViewCell.swift */; };
 		2D44B7B0209C421F0043EF90 /* MobileDetailsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A7209C421F0043EF90 /* MobileDetailsStore.swift */; };
 		2D44B7B1209C421F0043EF90 /* MobileDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D44B7A8209C421F0043EF90 /* MobileDetailsPresenter.swift */; };
@@ -24,7 +30,6 @@
 		A8439852209AA00C0022288F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8439850209AA00C0022288F /* Main.storyboard */; };
 		A8439854209AA00E0022288F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8439853209AA00E0022288F /* Assets.xcassets */; };
 		A8439857209AA00E0022288F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8439855209AA00E0022288F /* LaunchScreen.storyboard */; };
-		A8439862209AA00E0022288F /* CleanMobilePriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8439861209AA00E0022288F /* CleanMobilePriceTests.swift */; };
 		A85B544B209AEE7F0005197A /* MobileListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5442209AEE7F0005197A /* MobileListConfigurator.swift */; };
 		A85B544C209AEE7F0005197A /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5443209AEE7F0005197A /* Mobile.swift */; };
 		A85B544D209AEE7F0005197A /* MobileListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5444209AEE7F0005197A /* MobileListInteractor.swift */; };
@@ -52,6 +57,12 @@
 		2D14996720A3F66A00C15E23 /* MobileImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		2D14996A20A456D100C15E23 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		2D14996C20A53D9B00C15E23 /* MobileListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewControllerTests.swift; sourceTree = "<group>"; };
+		2D14998D20A5633700C15E23 /* MobileListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListInteractorTests.swift; sourceTree = "<group>"; };
+		2D14998F20A5633700C15E23 /* MobileListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListPresenterTests.swift; sourceTree = "<group>"; };
+		2D14999320A5A32B00C15E23 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
+		2D1499A920A9284100C15E23 /* MobileDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		2D1499AA20A9284100C15E23 /* MobileDetailsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsInteractorTests.swift; sourceTree = "<group>"; };
+		2D1499AC20A9284100C15E23 /* MobileDetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsPresenterTests.swift; sourceTree = "<group>"; };
 		2D44B7A4209B13440043EF90 /* MobileListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListTableViewCell.swift; sourceTree = "<group>"; };
 		2D44B7A7209C421F0043EF90 /* MobileDetailsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsStore.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsStore.swift; sourceTree = SOURCE_ROOT; };
 		2D44B7A8209C421F0043EF90 /* MobileDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobileDetailsPresenter.swift; path = CleanMobilePrice/Scenes/MobileDetails/MobileDetailsPresenter.swift; sourceTree = SOURCE_ROOT; };
@@ -72,7 +83,6 @@
 		A8439856209AA00E0022288F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8439858209AA00E0022288F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A843985D209AA00E0022288F /* CleanMobilePriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanMobilePriceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8439861209AA00E0022288F /* CleanMobilePriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMobilePriceTests.swift; sourceTree = "<group>"; };
 		A8439863209AA00E0022288F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A85B5442209AEE7F0005197A /* MobileListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListConfigurator.swift; sourceTree = "<group>"; };
 		A85B5443209AEE7F0005197A /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
@@ -119,8 +129,21 @@
 		2D14996E20A53DA200C15E23 /* MobileList */ = {
 			isa = PBXGroup;
 			children = (
+				2D14996C20A53D9B00C15E23 /* MobileListViewControllerTests.swift */,
+				2D14998D20A5633700C15E23 /* MobileListInteractorTests.swift */,
+				2D14998F20A5633700C15E23 /* MobileListPresenterTests.swift */,
 			);
 			path = MobileList;
+			sourceTree = "<group>";
+		};
+		2D1499A820A9282E00C15E23 /* MobileDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2D1499A920A9284100C15E23 /* MobileDetailsViewControllerTests.swift */,
+				2D1499AA20A9284100C15E23 /* MobileDetailsInteractorTests.swift */,
+				2D1499AC20A9284100C15E23 /* MobileDetailsPresenterTests.swift */,
+			);
+			path = MobileDetails;
 			sourceTree = "<group>";
 		};
 		A8439840209AA00C0022288F = {
@@ -162,9 +185,9 @@
 			isa = PBXGroup;
 			children = (
 				2D14996E20A53DA200C15E23 /* MobileList */,
-				A8439861209AA00E0022288F /* CleanMobilePriceTests.swift */,
+				2D1499A820A9282E00C15E23 /* MobileDetails */,
 				A8439863209AA00E0022288F /* Info.plist */,
-				2D14996C20A53D9B00C15E23 /* MobileListViewControllerTests.swift */,
+				2D14999320A5A32B00C15E23 /* Seeds.swift */,
 			);
 			path = CleanMobilePriceTests;
 			sourceTree = "<group>";
@@ -437,8 +460,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D1499AD20A9284100C15E23 /* MobileDetailsViewControllerTests.swift in Sources */,
+				2D1499AE20A9284100C15E23 /* MobileDetailsInteractorTests.swift in Sources */,
+				2D14999220A5633700C15E23 /* MobileListPresenterTests.swift in Sources */,
+				2D14999020A5633700C15E23 /* MobileListInteractorTests.swift in Sources */,
 				2D14996D20A53D9C00C15E23 /* MobileListViewControllerTests.swift in Sources */,
-				A8439862209AA00E0022288F /* CleanMobilePriceTests.swift in Sources */,
+				2D14999420A5A32B00C15E23 /* Seeds.swift in Sources */,
+				2D1499B020A9284100C15E23 /* MobileDetailsPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

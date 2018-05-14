@@ -59,10 +59,6 @@ struct Mobile: Mappable {
     return "Rating: \(rating ?? 0)"
   }
   
-  var isFavorite: Bool {
-    return DataManager.shared.favoriteIDs.contains(id!)
-  }
-  
   struct Displayed {
     var name: String?
     var description: String?
